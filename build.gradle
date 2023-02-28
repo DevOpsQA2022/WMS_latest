@@ -8,12 +8,17 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.1.2'
-        implementation('com.ts:auth-control-sdk:5.1.1@aar') { transitive=true }
-
+       
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
+
+dependencyResolutionManagement{
+    repositories{
+maven { url "https://jitpack.io" }
+    }
+    }
 
 allprojects {
     repositories {
