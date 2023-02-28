@@ -4,9 +4,7 @@ android {
     compileSdkVersion 30
     buildToolsVersion "29.0.2"
     defaultConfig {
-    configurations.all {
-    resolutionStrategy { force 'androidx.core:core:1.6.0' }
-}
+   
         applicationId "com.silvercreek.wmspickingclient"
         minSdkVersion 21
         targetSdkVersion 30
