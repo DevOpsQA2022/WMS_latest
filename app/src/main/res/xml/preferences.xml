@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content">
+    <PreferenceCategory android:title="@string/preferences_category_server">
+        <EditTextPreference
+            android:key="@string/preference_key_namespace"
+            android:defaultValue="@string/preference_default_namespace"
+            android:title="@string/label_namespace"
+            />
+
+        <EditTextPreference
+            android:key="@string/preference_key_timeout"
+            android:defaultValue="@string/preference_default_timeout"
+            android:title="@string/label_timeout"
+            />
+
+        <EditTextPreference
+            android:key="@string/preference_key_protocol"
+            android:defaultValue="@string/preference_default_protocol"
+            android:title="@string/label_protocol"
+            />
+
+        <EditTextPreference
+            android:key="@string/preference_key_server_path"
+            android:defaultValue="@string/preference_default_server_path"
+            android:title="@string/label_server_path"
+            />
+
+        <EditTextPreference
+            android:key="@string/preference_key_port_number"
+            android:defaultValue="@string/preference_default_port_number"
+            android:title="@string/label_port_number"
+            />
+
+        <EditTextPreference
+            android:key="@string/preference_key_application_name"
+            android:defaultValue="@string/preference_default_application_name"
+            android:title="@string/label_application_name"
+            />
+
+        <EditTextPreference
+            android:key="@string/preference_key_service_name"
+            android:defaultValue="@string/preference_default_service_name"
+            android:title="@string/label_service_name"
+            />
+
+    </PreferenceCategory>
+</PreferenceScreen>

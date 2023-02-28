@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor">
+
+    <!-- Heading for Cart movement table -->
+    <TableLayout
+        android:id="@+id/tbl_CartMovementTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <!-- Row 1: Cart ID Field -->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_weight="0.30"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Pallet Drop-Off"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <!-- Row 2: Cart Value Field -->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_weight="0.30"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="@string/Pallet"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvPallet"
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.70"
+                android:text=""
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <!-- Row 3: Room ID Field -->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_weight="0.30"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="@string/txt_route"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvRoute"
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.70"
+                android:text=""
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <!-- Row 4: Room Desc Field -->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvTrailerhead"
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_weight="0.30"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="@string/Trailers"
+                android:visibility="invisible"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvTrailer"
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.70"
+                android:text=""
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                android:visibility="invisible"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_weight="0.30"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Enter/ Scan Staging Slot or Truck "
+                android:textSize="15sp" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/edtStagingSlot"
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_marginRight="15dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="15dp"
+                android:layout_weight="0.70"
+                android:background="#ffffff"
+                android:gravity="left|center"
+                android:text=""
+                android:dropDownWidth="wrap_content"
+                android:hint="Enter Staging Slot"
+                android:textColor="#000000"
+                android:maxLength="10"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_weight="0.40"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:textSize="15sp" />
+        </TableRow>
+    </TableLayout>
+
+    <!-- Row 5: Cart Movement save and cancel button -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbl_CartMovementTable"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/rlayout"
+        android:layout_weight="1">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="50dp"
+                android:layout_weight="0.10"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnExport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.26"
+                android:text="@string/txt_export" />
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="50dp"
+                android:layout_weight="0.10"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:textSize="15sp" />
+
+        </TableRow>
+    </RelativeLayout>
+
+</RelativeLayout>

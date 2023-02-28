@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme_Blue_Swirl" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="pageTitle">@style/pageTitle_blue</item>
+        <item name="tableHeaderColumn">@style/tableHeaderColumn_blue</item>
+
+        <!--<item name="pageBackground">@style/page_background_blue</item>
+        <item name="LoginAppImage">@style/appimage_blue</item>
+        <item name="logingPageBorder">@style/loginpage_border_blue</item>
+        <item name="buttonStyle">@style/buttonStyle_blue</item>
+        <item name="pageTitle">@style/pageTitle_blue</item>
+        <item name="textRegular">@style/textRegular_blue</item>
+        <item name="PageLine">@style/pageLine_blue</item>
+        <item name="MenuName">@style/textMenuName_blue</item>
+        <item name="MenuListBackground">@style/MenuListBackground_blue</item>
+        <item name="MenuListImageBackground">@style/MenuListImageBackground_blue</item>
+        <item name="textWarning">@style/textWarning_blue</item>
+        <item name="textWarningMsg">@style/textWarningMsg_blue</item>
+        <item name="textReleaseDate">@style/textReleaseDate_blue</item>
+        <item name="textLongRetriever">@style/textLongRetriever_blue</item>
+        <item name="aboutPageTitle">@style/aboutPageTitle_blue</item>
+        <item name="textListItemRetriever">@style/textListItemRetriever_blue</item>
+        <item name="tableHeader">@style/tableHeader_blue</item>
+        <item name="tableBody">@style/tableBody_blue</item>
+        <item name="tableHeaderColumn">@style/tableHeaderColumn_blue</item>
+        <item name="signBg">@style/signBg_blue</item>
+        <item name="txtColor">@style/txtColorFor_blue</item>
+        <item name="dividerStyle">@style/dividerStyle_Transparent</item>
+        <item name="toast">@style/default_toast</item>
+        <item name="android:alertDialogTheme">@style/alert_dialog_theme</item>
+        <item name="android:dialogTheme">@style/dialog_theme</item>-->
+
+    </style>
+
+
+
+</resources>

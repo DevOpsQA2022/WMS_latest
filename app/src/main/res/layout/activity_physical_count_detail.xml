@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor">
+
+    <TableRow
+        android:id="@+id/tablerow1"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_weight="0.70"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:layout_height="35dp"
+            android:text="@string/MMPallet"
+            android:textSize="13sp"/>
+        <EditText
+            android:id="@+id/edtWlotno"
+            android:layout_weight="0.20"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:background="@color/colorWhite"
+            android:layout_height="35dp"
+            android:inputType="number"
+            android:hint="Enter Pallet No."
+            android:singleLine="true"
+            android:textSize="14sp">
+            <requestFocus />
+        </EditText>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tablerow2"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_below="@+id/tablerow1"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_weight="0.15"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:text=""
+            android:textSize="14sp"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tablerow3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_below="@+id/tablerow2"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvPCvalue"
+            android:background="@color/colorBlueNew"
+            android:layout_weight="0.17"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Slot: "
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tablerow4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tablerow3"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvSlotValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="Slots : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvpage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.50"
+                android:paddingRight="6dp"
+                android:gravity="right"
+                android:text="Pages : 1/1"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </TableRow>
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_tranView"
+        android:layout_width="fill_parent"
+        android:layout_height="255dp"
+        android:layout_below="@+id/tablerow4">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tablerow3"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lay_TranslistTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4f81bd"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:text="@string/txt_item"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="@string/MMPallet"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:paddingLeft="5dp"
+                    android:text="@string/txt_umeasur"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/txt_counted"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@string/txt_Descrip"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lst_TransItems"
+                android:layout_width="match_parent"
+                android:layout_height="255dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/scroll_tranView">
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="77dp"
+        android:layout_height="40dp"
+        android:text="@string/txt_cancel"
+        android:textSize="13sp"
+        android:visibility="visible" />
+
+        <Button
+
+            android:id="@+id/btn_export"
+            android:layout_width="77dp"
+            android:layout_height="40dp"
+            android:text="@string/txt_save"
+            android:textSize="13sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_previous"
+            android:layout_width="77dp"
+            android:layout_height="40dp"
+            android:text="@string/txt_previous"
+            android:textSize="13sp"
+            android:visibility="visible" />
+        <Button
+            android:id="@+id/btn_Next"
+            android:layout_width="77dp"
+            android:layout_height="40dp"
+            android:text="@string/txt_next"
+            android:textSize="13sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+  <!--  <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/txt_save"
+        android:textSize="14sp"
+        android:visibility="invisible" />-->
+
+</RelativeLayout>

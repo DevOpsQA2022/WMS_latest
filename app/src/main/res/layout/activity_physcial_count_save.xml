@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor">
+
+    <!-- Heading for Cart movement table -->
+    <TableLayout
+        android:id="@+id/tbl_CartMovementTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+        <!-- Row 1: Cart ID Field -->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvSlot"
+                android:layout_width="0dip"
+                android:layout_height="20dp"
+                android:layout_weight="0.50"
+                android:paddingLeft="15dp"
+                android:text=""
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvItemDesc"
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_weight="0.70"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text=""
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <!-- Row 3: Room ID Field -->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvLot"
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:linksClickable="true"
+                android:paddingLeft="15dp"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <!-- Row 4: Room Desc Field -->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="50dp"
+                android:layout_weight="0.40"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="@string/SelectUom"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tvSelectWarehouse"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0.60"
+                android:background="@drawable/spinner_bg"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:popupBackground="#FFFFFF"
+                android:visibility="visible" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="50dp"
+                android:layout_weight="0.40"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Org Qty"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/OrgQty"
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0.60"
+                android:dropDownWidth="wrap_content"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:textSize="14sp"/>
+        </TableRow>
+
+        <!-- Row 2: Cart Value Field -->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="50dp"
+                android:layout_weight="0.40"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="@string/QTY"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtQty"
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0.60"
+                android:background="#ffffff"
+                android:dropDownWidth="wrap_content"
+                android:gravity="left|center"
+                android:hint="Enter Qty"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:maxLength="10"
+                android:paddingRight="5dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="14sp"/>
+        </TableRow>
+    </TableLayout>
+
+    <!-- Row 5: Cart Movement save and cancel button -->
+    <RelativeLayout
+        android:id="@+id/rlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbl_CartMovementTable"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="1">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="50dp"
+                android:layout_weight="0.10"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.26"
+                android:text="@string/txt_save" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="50dp"
+                android:layout_weight="0.10"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnExport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.26"
+                android:text="@string/txt_export"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="50dp"
+                android:layout_weight="0.10"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.26"
+                android:text="@string/txt_cancel" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="50dp"
+                android:layout_weight="0.10"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="50dp"
+                android:layout_weight="0.05"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:textSize="15sp" />
+        </TableRow>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.silvercreek.wmspickingclient">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".controller.PrintPalletActivity"
+            android:label="Print Pallet Tag"
+            android:exported="false" />
+        <activity
+            android:name=".controller.ClearSessionsActivity"
+            android:exported="false"
+            android:label="Close Sessions" />
+        <activity
+            android:name=".controller.SalesOrderCharges"
+            android:exported="false"
+            android:label="@string/sales_order_charges" />
+        <activity
+            android:name=".controller.RepackMainMenuScreen"
+            android:exported="false"
+            android:label="@string/page_title_PR" />
+        <activity
+            android:name=".controller.ResetPalletAllocationActivity"
+            android:exported="false"
+            android:label="@string/txt_resetPalletAllocation" />
+        <activity
+            android:name=".controller.DataUtilitiesActivity"
+            android:exported="false"
+            android:label="@string/txt_datautilities" />
+        <activity
+            android:name=".controller.MoveTaskToSaveActivity"
+            android:exported="false"
+            android:label="@string/txt_movetask" />
+        <activity
+            android:name=".controller.MoveTaskSaveActivity"
+            android:exported="false"
+            android:label="@string/txt_movetask" />
+        <activity
+            android:name=".controller.MoveTaskActivity"
+            android:exported="false"
+            android:label="@string/txt_movetask" />
+        <activity
+            android:name=".controller.PhysicalCountSaveActivity"
+            android:label="@string/physicalcountlabel" />
+        <activity
+            android:name=".controller.PhysicalCountDetailActivity"
+            android:label="@string/physicalcountlabel" />
+        <activity
+            android:name=".controller.PhysicalCountMenuActivity"
+            android:label="@string/physicalcountlabel" />
+        <activity
+            android:name=".controller.ReceiveTaskEnterLoadActivity"
+            android:label="@string/page_title_Receive_Task" />
+        <activity
+            android:name=".controller.ReceiveTaskSelectLoadActivity"
+            android:label="@string/page_title_Receive_Task" />
+        <activity
+            android:name=".controller.ReceiveTaskSaveActivity"
+            android:label="@string/page_title_Receive_Task" />
+        <activity
+            android:name=".controller.ReceiveTaskActivity"
+            android:label="@string/page_title_Receive_Task" />
+        <activity
+            android:name=".controller.ReceiveTaskMenuActivity"
+            android:label="@string/page_title_Receive_Task" />
+        <activity
+            android:name=".controller.LoadPickPalletGetTruckActivity"
+            android:label="@string/page_title_Load_picked_pallets" />
+        <activity
+            android:name=".controller.LoadPickPalletGetPalletActivity"
+            android:label="@string/page_title_Load_picked_pallets" />
+        <activity
+            android:name=".controller.LoadPickPalletSelectDateActivity"
+            android:label="@string/page_title_Load_picked_pallets" />
+        <activity
+            android:name=".controller.PickTaskStagingSlot"
+            android:label="@string/page_title_Pick_Task" />
+        <activity
+            android:name=".controller.PickTaskLotLoadActivity"
+            android:label="@string/page_title_Pick_Task" />
+        <activity
+            android:name=".controller.SavePickTaskActivity"
+            android:label="@string/page_title_Pick_Task" />
+        <activity
+            android:name=".controller.PickTaskActivity"
+            android:label="@string/page_title_Pick_pallets" />
+        <activity
+            android:name=".controller.PickTaskMenuActivity"
+            android:label="@string/page_title_Pick_Task" />
+        <activity
+            android:name=".controller.PickTaskStagingActivity"
+            android:label="@string/page_title_Pick_Task" />
+        <activity
+            android:name=".controller.ConfigurationActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".controller.SelectWarehouseActivity" />
+        <activity android:name=".controller.SelectCompanyActivity" />
+        <activity
+            android:name=".controller.MainmenuActivity"
+            android:label="WMS Client Menu" />
+        <activity android:name=".controller.WorkingProgressActivity" />
+        <activity
+            android:name=".controller.LoginScreenActivity"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".controller.WebViewActivity"
+            android:label="@string/page_title_verify_connection_view" />
+        <activity
+            android:name=".controller.MoveManuallyActivity"
+            android:label="@string/page_title_MM" />
+        <activity
+            android:name=".controller.MPMList"
+            android:label="@string/page_title_MM" />
+        <activity
+            android:name=".controller.MMToSlotActivity"
+            android:label="@string/page_title_MM" />
+        <activity
+            android:name=".controller.BreakUomUtlyActivity"
+            android:label="@string/page_title_BUU" />
+        <activity
+            android:name=".controller.PickRepackActivity"
+            android:label="@string/page_title_PR"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".controller.PickRepackIngredientsActivity"
+            android:label="@string/page_title_RawMat"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".controller.PickRepackFinishGoodsActivity"
+            android:label="@string/page_title_Finish"
+            android:windowSoftInputMode="stateHidden" />
+    </application>
+
+</manifest>

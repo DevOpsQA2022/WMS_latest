@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:id="@+id/lay_TranslistTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:id="@+id/move_task"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textSize="12sp"
+                android:id="@+id/move_type"
+                />
+
+
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:id="@+id/move_status"
+                android:textSize="12sp"
+                android:layout_marginLeft="9dp"
+                />
+        </LinearLayout>
+    </LinearLayout>

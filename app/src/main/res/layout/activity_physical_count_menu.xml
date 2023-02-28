@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor">
+
+    <TableRow
+        android:id="@+id/tablerow1"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_weight="0.90"
+            android:gravity="center_vertical"
+            android:paddingLeft="2dp"
+            android:layout_height="40dp"
+            android:text="@string/SLot"
+            android:textSize="13sp"/>
+        <EditText
+            android:id="@+id/edtSlot"
+            android:layout_weight="0.20"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:background="@color/colorWhite"
+            android:layout_height="35dp"
+            android:hint="@string/enter_slot"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:textAllCaps="true"
+            android:inputType="textPersonName"
+            android:textSize="12sp">
+            <requestFocus />
+        </EditText>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tablerow2"
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_below="@+id/tablerow1">
+
+        <TextView
+            android:layout_weight="0.15"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text=""
+            android:textSize="14sp"/>
+    </TableRow>
+   <!-- <TableRow
+        android:id="@+id/tablerow3"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_below="@+id/tablerow2"
+        android:layout_weight="1">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:background="@color/colorBlueNew"
+            android:layout_height="35dp"
+            android:text="@string/physical_counter"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"/>
+
+    </TableRow>-->
+
+    <TableRow
+        android:id="@+id/tablerow4"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="0dp"
+        android:layout_below="@+id/tablerow2"
+        android:layout_weight="1">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/tvSlot"
+            android:layout_weight="16.90"
+            android:paddingLeft="2dp"
+            android:layout_gravity="center"
+            android:layout_height="40dp"
+            android:text="Slots:"
+            android:textSize="13sp"/>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tablerow5"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="0dp"
+        android:layout_below="@+id/tablerow4"
+        >
+
+        <RadioGroup
+            android:id="@+id/radioBtnGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:paddingStart="2dp"
+                android:text="@string/initial_item_on_screen"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+
+            <RadioButton
+                android:id="@+id/radioShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:buttonTint="@color/colorGreen"
+                android:drawablePadding="30dp"
+                android:text="@string/show"
+                android:textColor="#47494A"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioHide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:buttonTint="@color/colorRed"
+                android:checked="false"
+                android:drawablePadding="30dp"
+                android:text="@string/hide"
+                android:textColor="#47494A"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+
+    </TableRow>
+
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_tranView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tablerow5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lay_TranslistTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#4f81bd"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_slot"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="14sp"
+                    android:paddingStart="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="23dp"
+                    android:gravity="center|left"
+                    android:text="@string/txt_status"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <ListView
+                android:id="@+id/lst_TransItems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

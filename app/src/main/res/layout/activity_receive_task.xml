@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor">
+
+
+    <TableRow
+        android:id="@+id/tablerow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tvTaskDesc"
+           android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Task:"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tvVendDesc"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_weight="0.80"
+            android:gravity="center"
+            android:ellipsize="marquee"
+            android:layout_height="wrap_content"
+            android:text="Task"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textSize="13sp"/>
+    </TableRow>
+
+   <!-- <TableRow
+        android:id="@+id/tablerow2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tablerow1"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvVendDesc"
+            android:layout_weight="0.30"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task"
+            android:textSize="14sp"/>
+    </TableRow>-->
+
+    <TableRow
+        android:id="@+id/tablerow3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/tablerow1"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvPalletCnt"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Pallet Cnt:"
+            android:textSize="13sp"/>
+        <TextView
+            android:id="@+id/tvCaseCnt"
+            android:layout_weight="0.7"
+            android:gravity="center_vertical|right"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Case Cnt:"
+            android:textSize="13sp"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tablerow4"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/tablerow3"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1">
+        <TextView
+
+
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:text="Scan / Enter Pallet #"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:paddingRight="10dp"
+            android:textSize="13sp"/>
+
+
+        <EditText
+            android:id="@+id/edtLot_reCTsk"
+            android:background="@color/colorWhite"
+            android:layout_weight="0.30"
+            android:hint="Scan / Enter Pallet #"
+            android:inputType="none"
+            android:textIsSelectable="true"
+            android:singleLine="true"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dip"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:textSize="13sp"/>
+
+
+    </TableRow>
+
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_tranView"
+        android:layout_width="fill_parent"
+        android:layout_height="268dp"
+        android:layout_below="@+id/tablerow4"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="268dp"
+            android:layout_below="@+id/tablerow3"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lay_TranslistTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:background="#4f81bd"
+                android:orientation="horizontal"
+                android:padding="2dp">
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|right"
+                    android:paddingEnd="10dp"
+                    android:text="Ord"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|right"
+                    android:paddingEnd="10dp"
+                    android:text="Recv'd"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingEnd="10dp"
+                    android:text="Slot"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="23dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="5dp"
+                    android:text="@string/txt_palno"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="84dp"
+                    android:layout_height="23dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="5dp"
+                    android:text="@string/txt_item"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:paddingLeft="5dp"
+                    android:text="@string/txt_umeasur"
+                    android:textColor="@color/colorWhite"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:paddingLeft="5dp"
+                    android:text="@string/txt_Descrip"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lst_TransItems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll_tranView"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:id="@+id/rlayout"
+        android:layout_weight="1">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnHold"
+                android:layout_width="0dip"
+                android:layout_height="50dp"
+                android:layout_weight="0.30"
+                android:text="@string/txt_hold"  />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dip"
+                android:layout_height="50dp"
+                android:layout_weight="0.30"
+                android:text="@string/txt_cancel" />
+
+            <Button
+                android:id="@+id/btnExport"
+                android:layout_width="0dip"
+                android:layout_height="50dp"
+                android:layout_weight="0.30"
+                android:text="@string/txt_save" />
+
+
+        </TableRow>
+    </RelativeLayout>
+    <!--<Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        android:text="@string/txt_cancel" />
+    <Button
+        android:id="@+id/btn_export"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="14sp"
+
+        android:text="@string/txt_export" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        android:layout_marginRight="5dp"
+        android:text="@string/txt_save" />-->
+
+</RelativeLayout>

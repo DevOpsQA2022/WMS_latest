@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Style reference -->
+    <attr name="pageBackground" format = "reference" />
+    <attr name="LoginAppImage" format = "reference" />
+    <attr name="logingPageBorder" format ="reference" />
+    <attr name="buttonStyle" format ="reference" />
+    <attr name="pageTitle" format = "reference" />
+    <attr name="textRegular" format ="reference" />
+    <attr name="textRegularSmall" format ="reference" />
+    <attr name="PageLine" format ="reference" />
+    <attr name="toast" format ="reference" />
+    <attr name="dividerStyle" format ="reference" />
+    <attr name="MenuName" format ="reference"/>
+	<attr name="MenuListBackground" format ="reference" />
+	<attr name="MenuListImageBackground" format ="reference" />  
+	<attr name="textWarning" format ="reference" />
+	<attr name="textWarningMsg" format ="reference" />
+	<attr name="textReleaseDate" format ="reference" />
+	<attr name="textLongRetriever" format ="reference" />  
+	<attr name="aboutPageTitle" format ="reference" />
+	<attr name="textListItemRetriever" format ="reference" />
+	<attr name="tableHeader" format ="reference" />
+	<attr name="tableBody" format ="reference" />
+	<attr name="tableHeaderColumn" format ="reference" />
+	<attr name="signBg" format ="reference" />
+	<attr name="txtColor" format ="reference" />
+</resources>

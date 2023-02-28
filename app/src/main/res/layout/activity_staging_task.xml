@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor">
+
+    <TableRow
+        android:id="@+id/tablerow1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_weight="0.70"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:text="Pallet No"
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/edtLot"
+            android:layout_weight="0.30"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:background="@color/colorWhite"
+            android:layout_height="40dp"
+            android:hint="Enter Lot No"
+            android:singleLine="true"
+            android:textSize="14sp">
+            <requestFocus />
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tablerow2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_below="@+id/tablerow1"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/txtLotNo"
+            android:layout_weight="0.70"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:layout_height="40dp"
+            android:text="Staging Slot "
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/edtStaging"
+            android:layout_weight="0.30"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:background="@color/colorWhite"
+            android:layout_height="40dp"
+            android:hint="Enter Staging Slot"
+            android:singleLine="true"
+            android:textSize="14sp">
+        </EditText>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tablerow3"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tablerow2">
+  <!--      <TextView
+            android:id="@+id/tvActivePallet"
+            android:layout_weight="0.20"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="No Active Pallet"
+            android:textColor="@color/colorRed"
+            android:focusable="false"
+            android:textSize="15sp"
+            android:textStyle="bold"/>-->
+        <TextView
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_width="134dp"
+            android:layout_height="30dp"
+            android:width="53dp"
+            android:textStyle="bold"
+            android:text="Pallet Drop-Off"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/tvWeight"
+            android:gravity="center_vertical"
+            android:layout_width="168dp"
+            android:layout_height="30dp"
+            android:hint=""
+            android:textSize="14sp"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tablerow4"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_below="@+id/tablerow3">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_width="134dp"
+            android:layout_height="30dp"
+            android:width="53dp"
+            android:textStyle="bold"
+            android:text="Pallet"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/tvDesc"
+            android:gravity="center_vertical"
+            android:layout_width="238dp"
+            android:layout_height="30dp"
+            android:hint=""
+            android:textSize="14sp"/>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tablerow5"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_below="@+id/tablerow4">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:layout_width="57dp"
+            android:layout_height="35dp"
+            android:text="Route "
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/tvStop"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:hint=""
+            android:textSize="14sp"/>
+        <TextView
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:layout_width="58dp"
+            android:layout_height="35dp"
+            android:text=""
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/tvRoute"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:hint=""
+            android:textSize="14sp"/>
+
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tablerow7"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_below="@+id/tablerow5"
+        android:layout_weight="3">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:text="@string/txt_cancel" />
+        <Button
+            android:id="@+id/btn_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:text="@string/txt_cancel" />
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:text="@string/txt_export" />
+    </TableRow>
+
+
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_tranView"
+        android:layout_width="fill_parent"
+        android:layout_height="275dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tablerow7">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="275dp"
+            android:layout_below="@+id/tablerow6"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lay_TranslistTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#4f81bd"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_slot"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="14sp"
+                    android:paddingStart="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/txt_qty"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:paddingLeft="5dp"
+                    android:text="@string/txt_umeasur"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:paddingLeft="5dp"
+                    android:text="@string/txt_item"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:paddingLeft="5dp"
+                    android:text="@string/txt_lotno"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:paddingLeft="5dp"
+                    android:text="@string/txt_Descrip"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lst_TransItems"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"></ListView>
+        </LinearLayout>
+
+        </ScrollView>
+
+    </HorizontalScrollView>
+
+
+
+</RelativeLayout>

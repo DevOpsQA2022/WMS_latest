@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvStop"
+        android:layout_width="40dp"
+        android:textSize="12sp"
+        android:padding="5dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/tvLoaded"
+        android:layout_width="55dp"
+        android:textSize="12sp"
+        android:gravity="right"
+        android:padding="5dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/tvReady"
+        android:layout_width="55dp"
+        android:textSize="12sp"
+        android:gravity="right"
+        android:padding="5dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="45dp"
+        android:textSize="12sp"
+        android:gravity="right"
+        android:padding="5dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/tvPicker"
+        android:layout_width="60dp"
+        android:textSize="12sp"
+        android:gravity="center|left"
+        android:paddingLeft="15dp"
+        android:layout_height="30dp" />
+    <TextView
+        android:id="@+id/tvTask"
+        android:layout_width="55dp"
+        android:textSize="12sp"
+        android:gravity="right"
+        android:padding="5dp"
+        android:layout_height="30dp" />
+</LinearLayout>

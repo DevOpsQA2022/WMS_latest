@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor">
+
+    <TableRow
+        android:id="@+id/tablerow1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_weight="0.70"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_height="40dp"
+            android:text="@string/Pallet"
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/edtPallet"
+            android:layout_weight="0.30"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:background="@color/colorWhite"
+            android:layout_height="40dp"
+            android:hint="Enter Pallet"
+            android:singleLine="true"
+            android:textSize="14sp">
+            <requestFocus />
+        </EditText>
+    </TableRow>
+    <HorizontalScrollView
+        android:id="@+id/scroll_tranView"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/tablerow1"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="165dp"
+            android:layout_below="@+id/tablerow1"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lay_TranslistTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#4f81bd"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Truck"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="@string/Dock"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingLeft="5dp"
+                    android:text="@string/Routes"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingLeft="5dp"
+                    android:text="@string/Stops"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingLeft="5dp"
+                    android:text="@string/Pallets"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lst_TransItems"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"></ListView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

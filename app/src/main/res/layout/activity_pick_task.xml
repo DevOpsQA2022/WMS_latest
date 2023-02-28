@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor">
+
+    <TableRow
+        android:id="@+id/tablerow2"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_height="40dp"
+            android:layout_weight="0.70"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/Pallet"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtLot"
+            android:layout_height="40dp"
+            android:layout_weight="0.30"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:hint="Enter Pallet"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textSize="14sp"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tablerow7"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/tablerow2"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="3">
+
+        <Button
+            android:id="@+id/btn_Pervious"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/txt_edit_last"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_temp1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/txt_cancel"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_temp2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/txt_save"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tablerow8"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tablerow7"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="3">
+
+
+        <TextView
+            android:layout_width="57dp"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Cases :"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCase"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:hint=""
+            android:paddingLeft="10dp"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tablerow11"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tablerow8"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="3">
+
+
+        <Button
+            android:id="@+id/btn_Hold"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="0.04"
+            android:text="Hold"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/BtnEdt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="0.04"
+
+            android:text="Edit"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_CAncel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="0.04"
+            android:text="@string/txt_cancel"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="0.04"
+            android:text="Done"
+            android:textSize="14sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/txt_onHold"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="57dp"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Cases :"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:hint=""
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+
+    </TableRow>
+
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_tranView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tablerow11"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tablerow6"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lay_TranslistTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#4f81bd"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="5dp"
+                    android:text="@string/txt_itemDescrib"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:paddingLeft="5dp"
+                    android:text="@string/txt_umeasur"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="57dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="@string/ord"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="57dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Picked"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:text="Pallet"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lst_TransItems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="341dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center|left"
+        android:paddingLeft="5dp"
+        android:text="@string/txt_lotno"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

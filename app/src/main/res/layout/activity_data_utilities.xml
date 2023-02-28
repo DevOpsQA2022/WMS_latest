@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroundcolor">
+
+    <TableLayout
+        android:id="@+id/tbl_CartMovementTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp">
+
+            <RelativeLayout
+                android:id="@+id/badge_task1"
+                android:layout_width="155dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.45">
+
+                <RelativeLayout
+                    android:id="@+id/relative_task1"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp">
+
+                    <Button
+                        android:id="@+id/btn_restPallAlloc"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/txt_resetPalletAllocation"
+                        android:textSize="10sp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/badge_notification_task1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignRight="@id/relative_task1"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/badge_circle"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#FFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/badge_task2"
+                android:layout_width="155dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.45">
+
+                <RelativeLayout
+                    android:id="@+id/relative_task2"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="0.50">
+
+                    <Button
+                        android:id="@+id/btn_BreakerUOM"
+                        android:layout_width="500dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/txt_brkeruom"
+                        android:textSize="10sp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/badge_notification_task2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignRight="@id/relative_task2"
+                    android:background="@drawable/badge_circle"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#FFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="5dp">
+
+            <RelativeLayout
+                android:id="@+id/badge_task11"
+                android:layout_width="155dp"
+                android:layout_height="60dp"
+                android:visibility="gone"
+                android:layout_weight="0.45">
+
+                <RelativeLayout
+                    android:id="@+id/relative_task11"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp">
+
+                    <Button
+                        android:id="@+id/btn_ClearSessions"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="Clear Sessions"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/badge_notification_task11"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignRight="@id/relative_task11"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/badge_circle"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#FFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/badge_task22"
+                android:layout_width="155dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.45">
+
+                <RelativeLayout
+                    android:id="@+id/relative_task22"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="0.50">
+
+                    <Button
+                        android:id="@+id/btn_printPallet"
+                        android:layout_width="500dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/txt_printpallettag"
+                        android:textSize="10sp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/badge_notification_task22"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignRight="@id/relative_task22"
+                    android:background="@drawable/badge_circle"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#FFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </TableLayout>
+
+
+
+</RelativeLayout>

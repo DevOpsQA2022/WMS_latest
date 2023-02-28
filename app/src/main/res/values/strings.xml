@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">WMS Picking Client</string>
+    <string name="label_username">Username</string>
+    <string name="label_password">Password</string>
+    <string name="page_title_login">Login</string>
+    <string name="page_title_settings">Configuration Settings</string>
+
+
+    <string name="label_app_name">Application Name</string>
+    <string name="label_release_date">Release Date</string>
+    <string name="label_updated_date">Updated Date</string>
+    <string name="label_version">Version</string>
+    <string name="label_namespace">Namespace</string>
+    <string name="label_timeout">Timeout</string>
+    <string name="label_protocol">Protocol</string>
+    <string name="label_server_path">Server Path</string>
+    <string name="label_port_number">Port Number</string>
+    <string name="label_application_name">Application Name</string>
+    <string name="label_service_name">Service Name</string>
+
+    <!--Stored the Configuration settings file by Shared Preference-->
+    <string name="preferences_category_server">Web Server</string>
+
+    <string name="preference_key_namespace">preference_namespace</string>
+    <string name="preference_key_timeout">preference_timeout</string>
+    <string name="preference_key_protocol">preference_protocol</string>
+    <string name="preference_key_server_path">preference_server_path</string>
+    <string name="preference_key_port_number">preference_port_number</string>
+    <string name="preference_key_application_name">preference_application_name</string>
+    <string name="preference_key_service_name">preference_service_name</string>
+
+    <string name="bundle_key_invoice_number">invoice_number</string>
+
+    <string name="preference_default_namespace">http://silvercreek.com/DeliveryTracker</string>
+    <string name="preference_default_timeout">15000</string>
+    <string name="preference_default_protocol">http://</string>
+    <string name="preference_default_server_path"></string>
+    <string name="preference_default_port_number">443</string>
+    <string name="preference_default_application_name"></string>
+    <string name="preference_default_service_name">DeliveryTracker.asmx</string>
+    <string name="txt_save">Save</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="txt_edit_last">Edit Last Pick</string>
+    <string name="txt_onHold">Hold Task</string>
+    <string name="txt_Done">Done Task</string>
+    <string name="txt_EditLine">Edit line </string>
+    <string name="txt_verify">Verify</string>
+    <string name="page_title_verify">Verify</string>
+    <string name="page_title_verify_connection_view">Check Connection</string>
+    <string name="page_title_Pick_Task">Pick Task</string>
+    <string name="page_title_Pick_pallets">Pick Pallets</string>
+    <string name="label_customer_name">Customer Name</string>
+    <string name="label_company_name">Company Name</string>
+    <string name="label_company">Company</string>
+    <string name="page_title_select_company">Select Company</string>
+    <string name="button_Ok">Ok</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="btn_Next">Next</string>
+    <string name="txt_picktask">Pick Task</string>
+    <string name="txt_loadpallets">Load Picked Pallets</string>
+    <string name="txt_movetask">Move Task</string>
+    <string name="txt_datautilities">WMS Data Utilities</string>
+    <string name="txt_resetPalletAllocation">Reset Pallet Allocations</string>
+    <string name="txt_movemanual">Move Manually</string>
+    <string name="txt_physicalcount">Physical Count</string>
+    <string name="txt_receivetask">Receive Task</string>
+    <string name="txt_brkeruom">Breaker UOM Utility</string>
+    <string name="txt_printpallettag">PRINT PALLET TAG</string>
+    <string name="txt_pickrecpack">Pick Repack</string>
+    <string name="Item">Item</string>
+    <string name="Desc">Desc</string>
+    <string name="SLot">Slot</string>
+    <string name="OverSLot">Override Slot</string>
+    <string name="QTY">QTY</string>
+    <string name="txt_task">Task</string>
+    <string name="txt_route">Route</string>
+    <string name="txt_stop">Stop</string>
+    <string name="txt_status">Status</string>
+    <string name="txt_slot">Staging Slot</string>
+    <string name="txt_qty">Qty</string>
+    <string name="txt_actQty">Act Qty</string>
+    <string name="txt_ordQty">Ord Qty</string>
+    <string name="txt_umeasur">U/M</string>
+    <string name="txt_item">Item</string>
+    <string name="txt_itemDescrib">Item/Descrip</string>
+    <string name="txt_palno">Palno</string>
+    <string name="txt_lotno">Lot</string>
+    <string name="txt_Check">Check</string>
+    <string name="txt_close">Close</string>
+    <string name="txt_Edit">Edit</string>
+    <string name="txt_export">Export</string>
+    <string name="txt_next">Next</string>
+    <string name="txt_previous">PREV</string>
+    <string name="txt_hold">HOLD</string>
+    <string name="Lot">Lot</string>
+    <string name="Pallet">Pallet No </string>
+    <string name="Trailers">Trailer(s)</string>
+    <string name="Truck">Truck</string>
+    <string name="Dock">Dock</string>
+    <string name="Routes">Routes</string>
+    <string name="Stops">Stops</string>
+    <string name="Pallets">Pallets</string>
+    <string name="Loaded">Loaded</string>
+    <string name="Ready">Ready</string>
+    <string name="Total">Total</string>
+    <string name="Picker">Picker</string>
+    <string name="Task">Task</string>
+    <string name="page_title_Load_picked_pallets">Load Picked Pallets</string>
+    <string name="txt_Desc">Desc</string>
+    <string name="txt_Descrip">Description</string>
+    <string name="page_title_Receive_Task">Receive Task</string>
+    <string name="txt_type">Type</string>
+    <string name="txt_order">Order</string>
+    <string name="Printer">Printer</string>
+    <string name="EnterLoad">Enter value for Load</string>
+    <string name="Wlotno">Wlotno</string>
+    <string name="txt_counted">Counted</string>
+    <string name="SelectUom">Select Unit of Measure</string>
+    <string name="stagingSlot">Staging Slot</string>
+
+    <!-- Starting of Move Manually Strings-->
+    <string name="page_title_MM">Move Manually</string>
+    <string name="MMWlotNo">Warehouse Lot No</string>
+    <string name="MMSlotNo">From Slot</string>
+    <string name="MMToSlotNo">To Slot</string>
+    <string name="MMQty">Qty</string>
+    <string name="MMBtnSave">Save</string>
+    <string name="MMBtnCancel">Cancel</string>
+    <string name="MMProductMovement">Manual Product Movement</string>
+    <string name="MMDisplay">(Displaying Picked up Products)</string>
+    <string name="MMLot">Lot</string>
+    <string name="MMUOM">UOM</string>
+    <string name="MMFromSlot">From Slot</string>
+    <string name="MMDesc">Description</string>
+    <string name="MMGtin">GTIN</string>
+    <string name="MMPallet">Pallet #</string>
+    <!-- End of Move Manually Strings-->
+
+    <!--Starting of Breaker UOM Utility-->
+    <string name="page_title_BUU">Breaker UOM Utility</string>
+    <!--End of Breaker UOM Utility-->
+
+    <!--Starting of PickRepack-->
+    <string name="page_title_PR">Pick Repack</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="scanRepack">Scan / Enter Repack #</string>
+    <string name="scanWlotno">Scan / Enter WlotNo #</string>
+    <string name="scanPallet">Scan Pallet #</string>
+    <string name="finishedGoods">Finished Goods</string>
+    <string name="lotRfId">Lot Refid </string>
+    <string name="initial_item_on_screen">Initial Item on screen:</string>
+    <string name="hide">Hide</string>
+    <string name="show">Show</string>
+    <string name="enter_slot">Enter Slot</string>
+    <string name="physical_counter">Physical Counter</string>
+    <string name="scan_enter_gtin">Scan / Enter GTIN</string>
+    <string name="physicalcountlabel">Physical Counts</string>
+    <string name="ord">Ord</string>
+    <string name="load_config">Load Config</string>
+    <string name="page_title_RawMat"><font size="18">Pick Repack - Raw Materials</font></string>
+    <string name="page_title_Finish"><font size="18">Pick Repack - Finished Materials</font></string>
+    <string name="Dtecode">Scan / Repack #</string>
+    <string name="DtecodeEnter">Scan / Enter Repack #</string>
+    <string name="recall_last_dte_code">Recall last Repack #</string>
+    <string name="recall_last_repack">Recall last Repack #</string>
+    <string name="sales_order_charges">Sales Order Charges</string>
+    <string name="sales_order">Sales Order #</string>
+    <!--End of PickRepack-->
+
+
+</resources>
+
+
+

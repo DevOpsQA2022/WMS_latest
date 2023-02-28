@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor">
+
+
+    <TableRow
+        android:id="@+id/tablerow2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:id="@+id/tvSlotNo"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:text="To Slot"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/edtToSLot"
+            android:layout_width="205dp"
+            android:layout_height="40dp"
+            android:background="@color/colorWhite"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tablerow4"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tablerow2">
+
+        <TextView
+            android:id="@+id/tvQty"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:text="Qty"
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/edtMMQty"
+            android:layout_width="205dp"
+            android:layout_height="40dp"
+            android:background="@color/colorWhite"
+            android:ems="10"
+            android:inputType="numberSigned" />
+    </TableRow>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tablerow4"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/rlayout"
+        android:layout_weight="1">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="3">
+
+            <Button
+                android:id="@+id/btnMMSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight=".5"
+                android:text="@string/MMBtnSave" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnMMCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight=".5"
+                android:text="@string/MMBtnCancel" />
+
+        </TableRow>
+    </RelativeLayout>
+
+
+</RelativeLayout>

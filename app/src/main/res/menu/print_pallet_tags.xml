@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/print_pallet_tages"
+        android:icon="@drawable/import_menu"
+        android:title="Print  Pallet Tags"/>
+
+
+</menu>

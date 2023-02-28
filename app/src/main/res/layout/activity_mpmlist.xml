@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor">
+
+    <TextView
+        android:id="@+id/tvMPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/MMProductMovement"
+        app:layout_constraintBottom_toTopOf="@+id/lst_movedProducts"
+        app:layout_constraintStart_toStartOf="@+id/tvMPMDisplay"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMPMDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/MMDisplay"
+        app:layout_constraintBottom_toTopOf="@+id/llHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMPM" />
+
+
+    <LinearLayout
+        android:id="@+id/llHeader"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginBottom="357dp"
+        android:background="#4f81bd"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+       <!-- app:layout_constraintBottom_toTopOf="@+id/button"-->
+
+        <TextView
+            android:id="@+id/tvMMQty"
+            android:layout_width="40dp"
+            android:layout_height="28dp"
+            android:gravity="center|left"
+            android:paddingStart="10dp"
+            android:text="@string/MMQty"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMMLot"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:gravity="center|left"
+            android:paddingStart="10dp"
+            android:text="@string/MMPallet"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMMUOM"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:gravity="center|left"
+            android:paddingStart="10dp"
+            android:text="@string/MMUOM"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMMFromSlot"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:gravity="center|left"
+            android:paddingStart="10dp"
+            android:text="@string/MMFromSlot"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMMDesc"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:gravity="center|left"
+            android:paddingStart="10dp"
+            android:text="@string/MMDesc"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lst_movedProducts"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llHeader" />
+
+    <Button
+        android:id="@+id/btnScanNewLot"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="1dp"
+        android:text="Scan New Pallet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/lst_movedProducts"
+        app:layout_constraintTop_toBottomOf="@+id/lst_movedProducts" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

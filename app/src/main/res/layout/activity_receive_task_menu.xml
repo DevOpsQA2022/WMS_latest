@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rr_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2000dp"
+        android:id="@+id/edtScanTestRec"
+        android:textSize="0.1dp"
+        android:textColor="#879DCE"
+        android:padding="2dp"/>
+    <HorizontalScrollView
+        android:id="@+id/scroll_tranView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lay_TranslistTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#4f81bd"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_type"
+                    android:gravity="center|left"
+                    android:textSize="15sp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="@string/txt_order"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="15sp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="@string/txt_status"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="15sp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <ListView
+                android:id="@+id/lst_TransItems"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</RelativeLayout>

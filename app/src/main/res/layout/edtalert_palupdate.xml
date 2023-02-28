@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorDarkBlue"
+        android:layout_height="20dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorBlueNew"
+        android:gravity="left|center"
+        android:layout_height="45dp">
+        <TextView
+            android:gravity="left|center"
+            android:layout_width="match_parent"
+           android:text="Update pallet Qty"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="35dp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="155dp"
+        android:layout_below="@+id/tablerow6"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal">
+
+
+
+
+        <LinearLayout
+            android:id="@+id/lay_TranslistTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="35dp"
+            android:padding="2dp">
+
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="Pallet"
+                android:textColor="#222525"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="Pallet Qty"
+                android:textColor="#222525"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:layout_marginTop="13dp"
+                android:text="New Qty"
+                android:paddingLeft="5dp"
+                android:textColor="#222525"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <!-- <TextView
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:paddingLeft="5dp"
+            android:text="@string/txt_Descrip"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="14sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />-->
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/listdetails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="35dp"
+            android:padding="2dp">
+
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#222525"
+                android:id="@+id/edtlin_pallet"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:id="@+id/edtlin_oldQty"
+                android:textColor="#222525"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:layout_width="65dp"
+                android:layout_height="25dp"
+                android:paddingLeft="5dp"
+                android:id="@+id/edtlin_qty"
+                android:background="@color/colorWhite"
+                android:gravity="center|left"
+                android:textCursorDrawable="@drawable/cutomcursor"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:maxLength="3"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <!-- <TextView
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:paddingLeft="5dp"
+            android:text="@string/txt_Descrip"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="14sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />-->
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+       android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/button_cancel"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+
+            android:id="@+id/edtCancel_btn">
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="Override"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/edtOver_btn">
+        </Button>
+
+
+       <!-- <Button
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="Update"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/edtUpd_btn">
+        </Button>-->
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

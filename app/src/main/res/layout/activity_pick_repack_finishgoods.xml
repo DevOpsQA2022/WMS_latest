@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor">
+    <TableRow
+        android:id="@+id/tablerow0.1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp">
+
+      <!--  <TextView
+            android:id="@+id/DTeNumber"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textSize="12sp"
+            android:textStyle="bold" />-->
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="@string/scanRepack"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+          <TextView
+              android:id="@+id/tv_repacknum"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.50"
+              android:layout_marginRight="5dp"
+              android:gravity="center|right"
+              android:paddingLeft="10dp"
+              android:textSize="12sp"
+              android:textStyle="bold"    />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tablerow0"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tablerow0.1"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="0dp">
+
+        <TextView
+            android:id="@+id/DTeNumber"
+            android:layout_height="30dp"
+            android:layout_weight="0.50"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edtRepackNum"
+            android:layout_height="30dp"
+            android:layout_weight="0.50"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:hint="Repack #"
+            android:maxLength="10"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:importantForAutofill="no"/>
+
+        <!--  <TextView
+            android:id="@+id/tv_repacknum"
+            android:layout_height="30dp"
+            android:layout_weight="0.50"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textSize="12sp"
+            android:textStyle="bold"    repacknum/>-->
+        <Button
+            android:id="@+id/recallLstDTE"
+            android:layout_height="40dp"
+            android:layout_weight="0.50"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="@string/recall_last_repack"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tablerow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tablerow0"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="3dp"
+        android:padding="2dp"
+        android:layout_marginBottom="1dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Scan/Enter Item #"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Quantity"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+    </TableRow>
+
+    <!--<TableRow
+        android:id="@+id/tablerow2"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tablerow1"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp">
+
+        <TextView
+            android:layout_height="40dp"
+            android:layout_weight="0.50"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/lotRfId"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvLotrfId"
+            android:layout_height="40dp"
+            android:layout_weight="0.50"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </TableRow>-->
+
+    <TableRow
+        android:id="@+id/tablerow4"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tablerow1"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp">
+
+
+        <EditText
+            android:id="@+id/edtPallet"
+            android:layout_height="30dp"
+            android:layout_weight="0.50"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:hint="Item #"
+            android:maxLength="15"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:inputType="textPersonName"
+            android:textSize="12sp"
+            android:importantForAutofill="no"/>
+
+
+        <TextView
+            android:layout_height="40dp"
+            android:layout_width="4dp"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edtQty"
+            android:layout_height="30dp"
+            android:layout_weight="0.50"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="7"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:importantForAutofill="no"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tablerow8"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tablerow4"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp">
+
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.50">
+            <TextView
+                android:id="@+id/lotNo"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:layout_weight="0.25"
+                android:text=""
+                android:textSize="13sp" />
+            <Button
+                android:layout_width="20dp"
+                android:id="@+id/btn_close"
+                android:layout_height="40dp"
+                android:visibility="invisible"
+                android:text="@string/txt_close"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.50">
+          <Button
+              android:id="@+id/btn_cancel"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:layout_weight="0.25"
+              android:text="@string/txt_cancel"
+              android:textSize="12sp" />
+
+          <Button
+              android:id="@+id/btn_save"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:layout_weight="0.25"
+              android:text="@string/txt_save"
+              android:textSize="12sp" />
+        </LinearLayout>
+
+    </TableRow>
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_tranView"
+        android:layout_width="fill_parent"
+        android:layout_height="203dp"
+        android:layout_below="@+id/tablerow8"
+        android:layout_marginTop="1dp">
+
+    <LinearLayout
+        android:id="@+id/ll_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tablerow3"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lay_TranslistTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#4f81bd"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="@string/txt_item"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:text="Lot No"
+                android:layout_marginStart="1dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:text="@string/txt_qty"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="@string/txt_umeasur"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <!--<TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="@string/txt_lotno"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_slot"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp"
+                android:paddingStart="5dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />-->
+
+
+            <TextView
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="@string/txt_Desc"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+                <ListView
+                    android:id="@+id/lst_TransItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="185dp" />
+    </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+    <TableRow
+
+        android:id="@+id/tablerow3"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/scroll_tranView"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="1dp">
+
+
+
+        <Button
+            android:id="@+id/btn_hold"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:text="@string/txt_hold" />
+
+        <Button
+            android:id="@+id/btn_Fcancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:text="@string/txt_cancel" />
+
+        <Button
+            android:id="@+id/btn_Fsave"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:text="@string/txt_save" />
+
+    </TableRow>
+</RelativeLayout>
